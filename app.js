@@ -23,3 +23,7 @@ function square(sq)
 {
     document.getElementById('result').value =Math.pow(sq,2)
 }
+function cube(c)
+{
+    document.getElementById('result').value =Math.pow(c,3)
+}

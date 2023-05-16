@@ -17,11 +17,18 @@
   </head>
   <script src="app.js"></script>
   <body>
+    <div class="container">
     <table class="table">
       <div class="calculator card">
         <input
           type="text" id="result" class="calculator-screen z-depth-1" value="" disabled/>
         <div class="calculator-keys">
+          <tr>
+            <td><button type="button" class="operator btn btn-info" onclick="cube(document.getElementById('result').value)">x<sup>3</sup></button></td>
+            <td><button type="button" class="operator btn btn-info" onclick="getValue('Math.cbrt')"> &#x221B;</button></td>
+            <td><button type="button" class="operator btn btn-info" onclick="getValue('Math.acos')">cos<sup>-1</sup></button></td>
+            <td><button type="button" class="operator btn btn-info" onclick="getValue('Math.atan')">tan<sup>-1</sup></button></td>
+          </tr>
           <tr>
             <td><button type="button" class="operator btn btn-info" onclick="getValue('Math.log')">log</button></td>
             <td><button type="button" class="operator btn btn-info" onclick="square(document.getElementById('result').value)">x<sup>2</sup></button></td>
@@ -69,5 +76,5 @@
   </div>
   </div>
     </table>
-  </body>
+  </div>  </body>
 </html>
